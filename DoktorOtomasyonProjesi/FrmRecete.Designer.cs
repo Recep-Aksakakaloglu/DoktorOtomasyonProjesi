@@ -31,19 +31,19 @@ namespace DoktorOtomasyonProjesi
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRecete));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIlacEkle = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.listrecete = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richsonuc = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btncikis = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnIlacSil = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,7 +54,7 @@ namespace DoktorOtomasyonProjesi
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnIlacEkle);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(12, 169);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -65,16 +65,16 @@ namespace DoktorOtomasyonProjesi
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "İlaçlar";
             // 
-            // button1
+            // btnIlacEkle
             // 
-            this.button1.Location = new System.Drawing.Point(209, 36);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 61);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnIlacEkle.Location = new System.Drawing.Point(209, 19);
+            this.btnIlacEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIlacEkle.Name = "btnIlacEkle";
+            this.btnIlacEkle.Size = new System.Drawing.Size(111, 61);
+            this.btnIlacEkle.TabIndex = 31;
+            this.btnIlacEkle.Text = "EKLE";
+            this.btnIlacEkle.UseVisualStyleBackColor = true;
+            this.btnIlacEkle.Click += new System.EventHandler(this.btnIlacEkle_Click);
             // 
             // comboBox1
             // 
@@ -88,7 +88,7 @@ namespace DoktorOtomasyonProjesi
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Controls.Add(this.btnIlacSil);
             this.groupBox2.Controls.Add(this.listrecete);
             this.groupBox2.Location = new System.Drawing.Point(344, 169);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -98,17 +98,6 @@ namespace DoktorOtomasyonProjesi
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Reçete";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(117, 224);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(179, 55);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "İlacı Sil";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // listrecete
             // 
@@ -168,23 +157,22 @@ namespace DoktorOtomasyonProjesi
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Aquamarine;
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btncikis);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(774, 53);
             this.panel1.TabIndex = 28;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // button3
+            // btncikis
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(716, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 53);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(716, 0);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(58, 53);
+            this.btncikis.TabIndex = 31;
+            this.btncikis.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -203,6 +191,17 @@ namespace DoktorOtomasyonProjesi
             this.label2.Size = new System.Drawing.Size(348, 49);
             this.label2.TabIndex = 29;
             this.label2.Text = "KOCAELİ  ÜNİVERSİTESİ \r\n";
+            // 
+            // btnIlacSil
+            // 
+            this.btnIlacSil.Location = new System.Drawing.Point(126, 224);
+            this.btnIlacSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIlacSil.Name = "btnIlacSil";
+            this.btnIlacSil.Size = new System.Drawing.Size(179, 55);
+            this.btnIlacSil.TabIndex = 31;
+            this.btnIlacSil.Text = "İlacı Sil";
+            this.btnIlacSil.UseVisualStyleBackColor = true;
+            this.btnIlacSil.Click += new System.EventHandler(this.btnIlacSil_Click);
             // 
             // FrmRecete
             // 
@@ -242,16 +241,16 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ListBox listrecete;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RichTextBox richsonuc;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btncikis;
+        private System.Windows.Forms.Button btnIlacEkle;
+        private System.Windows.Forms.Button btnIlacSil;
     }
 }

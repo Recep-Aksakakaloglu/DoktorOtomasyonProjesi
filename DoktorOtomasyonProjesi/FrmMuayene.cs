@@ -15,6 +15,8 @@ namespace DoktorOtomasyonProjesi
     public partial class FrmMuayene : Form
     {
         public string _idh;
+        public string _idd;
+        public string _idm;
         public FrmMuayene(string idh)
         {
             InitializeComponent();
@@ -22,6 +24,11 @@ namespace DoktorOtomasyonProjesi
         }
 
         SqlBaglantisi bgl = new SqlBaglantisi();
+
+        private void btncikis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -34,19 +41,8 @@ namespace DoktorOtomasyonProjesi
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-        public string _idm;
         private void FrmMuayene_Load(object sender, EventArgs e)
         {
-
             SqlCommand komut = new SqlCommand("Select * from tbl_hasta where Hasta_id = '" + _idh + "'", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
 
@@ -68,9 +64,7 @@ namespace DoktorOtomasyonProjesi
             btnTahlilIste.Enabled = false;
         }
 
-        public string _idd;
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnkaydet_Click(object sender, EventArgs e)
         {
             _idd = AppUser.Doktor_id.ToString();
             SqlCommand komut = new SqlCommand("Insert Into tbl_muayene (Muayene_tani, Muayene_sikayet, Hasta_id, Doktor_id) values (@d1,@d2,@d3,@d4)", bgl.baglanti());
@@ -113,5 +107,6 @@ namespace DoktorOtomasyonProjesi
             FrmRapor fr = new FrmRapor(txthid.Text, _idm);
             fr.Show();
         }
+
     }
 }

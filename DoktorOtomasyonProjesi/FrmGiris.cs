@@ -19,18 +19,15 @@ namespace DoktorOtomasyonProjesi
             InitializeComponent();
         }
 
+        //TANIMLANAN SQL ADRESİNİ ALTTAKİ YÖNTEMLE ÇAĞIRDIK
         SqlBaglantisi bgl = new SqlBaglantisi();
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btncikis_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        //FORMU HAREKET ETTİRME KODLARI
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -42,13 +39,9 @@ namespace DoktorOtomasyonProjesi
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void FrmGiris_Load_1(object sender, EventArgs e)
+        private void btngiris_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            //SİSTEME GİRİŞ YAPILACAK ID VE ŞİFRE BİLGİSİNİ DOĞRULUĞUNU KONTROL EDEN SORGU VE KOMUTLARI YAZDIK
             SqlCommand komut = new SqlCommand("Select * From tbl_doktor where Doktor_id=@p1 AND Doktor_sifre=@p2", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", txtid.Text);
             komut.Parameters.AddWithValue("@p2", txtsifre.Text);

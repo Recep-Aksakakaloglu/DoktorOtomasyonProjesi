@@ -15,6 +15,8 @@ namespace DoktorOtomasyonProjesi
     public partial class FrmTahlil : Form
     {
         public string _idh;
+        public string _idm;
+        public string _idt;
         public FrmTahlil(string idh)
         {
             InitializeComponent();
@@ -64,7 +66,7 @@ namespace DoktorOtomasyonProjesi
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btncikis_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
@@ -80,7 +82,6 @@ namespace DoktorOtomasyonProjesi
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        public string _idt;
         private void cmbtahlil_SelectedValueChanged(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Select Tahlil_id from tbl_tahlil where Tahlil_turu = '" + cmbtahlil.Text + "'", bgl.baglanti());
@@ -92,9 +93,7 @@ namespace DoktorOtomasyonProjesi
             bgl.baglanti().Close();
         }
 
-        public string _idm;
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnTahlilIste_Click(object sender, EventArgs e)
         {
             SqlCommand komut2 = new SqlCommand("Select Muayene_id from tbl_muayene", bgl.baglanti());
             SqlDataReader dr2 = komut2.ExecuteReader();
@@ -118,5 +117,6 @@ namespace DoktorOtomasyonProjesi
         {
             rcthdetay.Text = " ";
         }
+
     }
 }

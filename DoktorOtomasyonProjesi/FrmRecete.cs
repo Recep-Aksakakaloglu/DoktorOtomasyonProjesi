@@ -16,14 +16,14 @@ namespace DoktorOtomasyonProjesi
     public partial class FrmRecete : Form
     {
         public string _idh;
+        public string _iaa;
+        public string _idr;
+        public string _idi;
         public FrmRecete(string idh)
         {
             InitializeComponent();
             _idh = idh;
         }
-
-        public string _idr;
-        public string _idi;
 
         SqlBaglantisi bgl = new SqlBaglantisi();
 
@@ -73,7 +73,7 @@ namespace DoktorOtomasyonProjesi
             bgl.baglanti().Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnIlacEkle_Click(object sender, EventArgs e)
         {
             ReceteId.ReceteID = _idr;
             SqlCommand komutkaydet = new SqlCommand("insert into tbl_recete_ilac(Recete_id, Ilac_id, Ilac_ad) values (@r1,@r2,@r3)", bgl.baglanti());
@@ -110,14 +110,13 @@ namespace DoktorOtomasyonProjesi
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        public string _iaa;
         private void listrecete_Click(object sender, EventArgs e)
         {
             _iaa = listrecete.SelectedItem.ToString();
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnIlacSil_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Delete from tbl_recete_ilac where Recete_id = @recete_id AND Ilac_ad = @ilac_adi", bgl.baglanti());
             komut.Parameters.AddWithValue("@recete_id", _idr);

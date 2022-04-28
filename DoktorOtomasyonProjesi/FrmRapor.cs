@@ -16,6 +16,7 @@ namespace DoktorOtomasyonProjesi
     {
         public string _idh;
         public string _idm;
+        public string _idd;
         public FrmRapor(string idh, string idm)
         {
             InitializeComponent();
@@ -25,10 +26,14 @@ namespace DoktorOtomasyonProjesi
 
         SqlBaglantisi bgl = new SqlBaglantisi();
 
+        private void btncikis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
         public int year;
         public int month;
         public int day;
-        public string _idd;
 
         private void FrmRapor_Load(object sender, EventArgs e)
         {
@@ -98,7 +103,7 @@ namespace DoktorOtomasyonProjesi
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnkaydet_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("update tbl_rapor set Rapor_baslangic=@d1, Rapor_bitis=@d2, Rapor_aciklama=@d3, Rapor_durum = @d4 where Rapor_id = '" + txtbno.Text + "'", bgl.baglanti());
             komut.Parameters.AddWithValue("@d1", dateTimePicker2.Value);
@@ -117,11 +122,6 @@ namespace DoktorOtomasyonProjesi
             MessageBox.Show("Rapor Oluşturuldu");
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -132,5 +132,6 @@ namespace DoktorOtomasyonProjesi
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
     }
 }

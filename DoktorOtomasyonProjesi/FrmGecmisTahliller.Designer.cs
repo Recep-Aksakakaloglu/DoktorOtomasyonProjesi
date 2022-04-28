@@ -39,6 +39,7 @@ namespace DoktorOtomasyonProjesi
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btncikis = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,6 +112,7 @@ namespace DoktorOtomasyonProjesi
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Aquamarine;
+            this.panel2.Controls.Add(this.btncikis);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(-4, 0);
@@ -129,16 +131,16 @@ namespace DoktorOtomasyonProjesi
             this.label1.TabIndex = 1;
             this.label1.Text = "Geçmiş Tahlil Bilgileri";
             // 
-            // button1
+            // btncikis
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(788, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(61, 53);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(670, 0);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(61, 53);
+            this.btncikis.TabIndex = 2;
+            this.btncikis.UseVisualStyleBackColor = true;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // FrmGecmisTahliller
             // 
@@ -172,5 +174,6 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btncikis;
     }
 }

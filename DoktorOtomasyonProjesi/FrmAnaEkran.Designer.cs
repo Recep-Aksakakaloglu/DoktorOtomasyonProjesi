@@ -30,18 +30,18 @@ namespace DoktorOtomasyonProjesi
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaEkran));
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btncikis = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btntaburcuet = new System.Windows.Forms.Button();
+            this.btntahliller = new System.Windows.Forms.Button();
+            this.btnmuayene = new System.Windows.Forms.Button();
+            this.btnrandevular = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnhesap = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -49,23 +49,10 @@ namespace DoktorOtomasyonProjesi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1031, 51);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 74);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Aquamarine;
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.btncikis);
             this.panel1.Location = new System.Drawing.Point(-1, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -73,24 +60,24 @@ namespace DoktorOtomasyonProjesi
             this.panel1.TabIndex = 2;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // button6
+            // btncikis
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(1088, 1);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(52, 45);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.btncikis.BackColor = System.Drawing.Color.Transparent;
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(1088, 0);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(52, 45);
+            this.btncikis.TabIndex = 7;
+            this.btncikis.UseVisualStyleBackColor = false;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btntaburcuet);
+            this.groupBox1.Controls.Add(this.btntahliller);
+            this.groupBox1.Controls.Add(this.btnmuayene);
+            this.groupBox1.Controls.Add(this.btnrandevular);
             this.groupBox1.Location = new System.Drawing.Point(7, 179);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
@@ -100,53 +87,53 @@ namespace DoktorOtomasyonProjesi
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menü";
             // 
-            // button5
+            // btntaburcuet
             // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button5.Location = new System.Drawing.Point(0, 322);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(194, 58);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "TABURCU ET";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btntaburcuet.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btntaburcuet.Location = new System.Drawing.Point(0, 326);
+            this.btntaburcuet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btntaburcuet.Name = "btntaburcuet";
+            this.btntaburcuet.Size = new System.Drawing.Size(194, 58);
+            this.btntaburcuet.TabIndex = 8;
+            this.btntaburcuet.Text = "TABURCU ET";
+            this.btntaburcuet.UseVisualStyleBackColor = true;
+            this.btntaburcuet.Click += new System.EventHandler(this.btntaburcuet_Click);
             // 
-            // button3
+            // btntahliller
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button3.Location = new System.Drawing.Point(0, 131);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 58);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "MUAYENE";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btntahliller.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btntahliller.Location = new System.Drawing.Point(0, 230);
+            this.btntahliller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btntahliller.Name = "btntahliller";
+            this.btntahliller.Size = new System.Drawing.Size(194, 58);
+            this.btntahliller.TabIndex = 8;
+            this.btntahliller.Text = "TAHLİLLER";
+            this.btntahliller.UseVisualStyleBackColor = true;
+            this.btntahliller.Click += new System.EventHandler(this.btntahliller_Click);
             // 
-            // button4
+            // btnmuayene
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button4.Location = new System.Drawing.Point(0, 222);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 58);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "TAHLİLLER";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnmuayene.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnmuayene.Location = new System.Drawing.Point(0, 135);
+            this.btnmuayene.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnmuayene.Name = "btnmuayene";
+            this.btnmuayene.Size = new System.Drawing.Size(194, 58);
+            this.btnmuayene.TabIndex = 8;
+            this.btnmuayene.Text = "MUAYENE";
+            this.btnmuayene.UseVisualStyleBackColor = true;
+            this.btnmuayene.Click += new System.EventHandler(this.btnmuayene_Click);
             // 
-            // button2
+            // btnrandevular
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button2.Location = new System.Drawing.Point(0, 34);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 58);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "RANDEVULAR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnrandevular.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnrandevular.Location = new System.Drawing.Point(0, 42);
+            this.btnrandevular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnrandevular.Name = "btnrandevular";
+            this.btnrandevular.Size = new System.Drawing.Size(194, 58);
+            this.btnrandevular.TabIndex = 8;
+            this.btnrandevular.Text = "RANDEVULAR";
+            this.btnrandevular.UseVisualStyleBackColor = true;
+            this.btnrandevular.Click += new System.EventHandler(this.btnrandevular_Click);
             // 
             // groupBox2
             // 
@@ -196,18 +183,31 @@ namespace DoktorOtomasyonProjesi
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btnhesap
+            // 
+            this.btnhesap.BackColor = System.Drawing.Color.Transparent;
+            this.btnhesap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnhesap.Image = ((System.Drawing.Image)(resources.GetObject("btnhesap.Image")));
+            this.btnhesap.Location = new System.Drawing.Point(1031, 51);
+            this.btnhesap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnhesap.Name = "btnhesap";
+            this.btnhesap.Size = new System.Drawing.Size(105, 74);
+            this.btnhesap.TabIndex = 7;
+            this.btnhesap.UseVisualStyleBackColor = false;
+            this.btnhesap.Click += new System.EventHandler(this.btnhesap_Click);
+            // 
             // FrmAnaEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1139, 605);
+            this.Controls.Add(this.btnhesap);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimizeBox = false;
@@ -225,17 +225,17 @@ namespace DoktorOtomasyonProjesi
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btncikis;
+        private System.Windows.Forms.Button btnhesap;
+        private System.Windows.Forms.Button btnrandevular;
+        private System.Windows.Forms.Button btnmuayene;
+        private System.Windows.Forms.Button btntahliller;
+        private System.Windows.Forms.Button btntaburcuet;
     }
 }

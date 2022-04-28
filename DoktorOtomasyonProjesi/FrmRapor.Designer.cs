@@ -72,14 +72,12 @@ namespace DoktorOtomasyonProjesi
             this.label14 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.btncikis = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnkaydet = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -502,11 +500,9 @@ namespace DoktorOtomasyonProjesi
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel9.Controls.Add(this.label19);
-            this.panel9.Controls.Add(this.label20);
+            this.panel9.Controls.Add(this.btncikis);
             this.panel9.Controls.Add(this.label2);
             this.panel9.Controls.Add(this.label1);
-            this.panel9.Controls.Add(this.button1);
             this.panel9.Controls.Add(this.pictureBox1);
             this.panel9.Location = new System.Drawing.Point(1, 0);
             this.panel9.Name = "panel9";
@@ -514,23 +510,17 @@ namespace DoktorOtomasyonProjesi
             this.panel9.TabIndex = 8;
             this.panel9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel9_MouseDown);
             // 
-            // label19
+            // btncikis
             // 
-            this.label19.Location = new System.Drawing.Point(948, 87);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(140, 23);
-            this.label19.TabIndex = 5;
-            this.label19.Text = "label19";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.Location = new System.Drawing.Point(891, 87);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 17);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Tarih:";
+            this.btncikis.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(1046, 0);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(54, 47);
+            this.btncikis.TabIndex = 6;
+            this.btncikis.UseVisualStyleBackColor = false;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // label2
             // 
@@ -552,18 +542,6 @@ namespace DoktorOtomasyonProjesi
             this.label1.TabIndex = 2;
             this.label1.Text = "RAPOR EKRANI ";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1046, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 47);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -577,22 +555,22 @@ namespace DoktorOtomasyonProjesi
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel10.Controls.Add(this.button2);
+            this.panel10.Controls.Add(this.btnkaydet);
             this.panel10.Location = new System.Drawing.Point(1, 652);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(1100, 65);
             this.panel10.TabIndex = 9;
             // 
-            // button2
+            // btnkaydet
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(450, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(207, 45);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "KAYDET";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnkaydet.BackColor = System.Drawing.Color.Red;
+            this.btnkaydet.Location = new System.Drawing.Point(441, 12);
+            this.btnkaydet.Name = "btnkaydet";
+            this.btnkaydet.Size = new System.Drawing.Size(207, 45);
+            this.btnkaydet.TabIndex = 1;
+            this.btnkaydet.Text = "KAYDET";
+            this.btnkaydet.UseVisualStyleBackColor = false;
+            this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
             // 
             // FrmRapor
             // 
@@ -660,7 +638,6 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
@@ -688,8 +665,7 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox txttani;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btncikis;
+        private System.Windows.Forms.Button btnkaydet;
     }
 }

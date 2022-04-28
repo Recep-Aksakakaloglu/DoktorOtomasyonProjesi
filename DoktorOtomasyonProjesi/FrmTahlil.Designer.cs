@@ -51,10 +51,10 @@ namespace DoktorOtomasyonProjesi
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rcthdetay = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.cmbtahlil = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btncikis = new System.Windows.Forms.Button();
+            this.btnTahlilIste = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -275,8 +275,8 @@ namespace DoktorOtomasyonProjesi
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnTahlilIste);
             this.groupBox3.Controls.Add(this.rcthdetay);
-            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.cmbtahlil);
             this.groupBox3.Location = new System.Drawing.Point(385, 163);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -297,17 +297,6 @@ namespace DoktorOtomasyonProjesi
             this.rcthdetay.Text = "";
             this.rcthdetay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.rcthdetay_MouseClick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(56, 267);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tahlil İste";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // cmbtahlil
             // 
             this.cmbtahlil.FormattingEnabled = true;
@@ -321,23 +310,34 @@ namespace DoktorOtomasyonProjesi
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Aquamarine;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btncikis);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(649, 54);
             this.panel1.TabIndex = 28;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown_1);
             // 
-            // button2
+            // btncikis
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(583, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 54);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(583, 0);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(66, 54);
+            this.btncikis.TabIndex = 29;
+            this.btncikis.UseVisualStyleBackColor = true;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
+            // 
+            // btnTahlilIste
+            // 
+            this.btnTahlilIste.Location = new System.Drawing.Point(50, 277);
+            this.btnTahlilIste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTahlilIste.Name = "btnTahlilIste";
+            this.btnTahlilIste.Size = new System.Drawing.Size(161, 42);
+            this.btnTahlilIste.TabIndex = 29;
+            this.btnTahlilIste.Text = "Tahlil İste";
+            this.btnTahlilIste.UseVisualStyleBackColor = true;
+            this.btnTahlilIste.Click += new System.EventHandler(this.btnTahlilIste_Click);
             // 
             // FrmTahlil
             // 
@@ -386,13 +386,13 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cmbtahlil;
         private System.Windows.Forms.TextBox txthid;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txthyas;
         private System.Windows.Forms.RichTextBox rcthdetay;
+        private System.Windows.Forms.Button btncikis;
+        private System.Windows.Forms.Button btnTahlilIste;
     }
 }

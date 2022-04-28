@@ -50,15 +50,15 @@ namespace DoktorOtomasyonProjesi
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.rcthtani = new System.Windows.Forms.RichTextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnTahlilIste = new System.Windows.Forms.Button();
             this.btnReceteYaz = new System.Windows.Forms.Button();
             this.btnRaporYaz = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btncikis = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnkaydet = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -279,7 +279,7 @@ namespace DoktorOtomasyonProjesi
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.btnkaydet);
             this.groupBox4.Controls.Add(this.btnTahlilIste);
             this.groupBox4.Controls.Add(this.btnReceteYaz);
             this.groupBox4.Controls.Add(this.btnRaporYaz);
@@ -291,18 +291,6 @@ namespace DoktorOtomasyonProjesi
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "İŞLEMLER";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.button1.Location = new System.Drawing.Point(6, 34);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 59);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "DEĞERLERİ KAYDET";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnTahlilIste
             // 
@@ -343,7 +331,7 @@ namespace DoktorOtomasyonProjesi
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Aquamarine;
-            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btncikis);
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
@@ -351,17 +339,17 @@ namespace DoktorOtomasyonProjesi
             this.panel1.TabIndex = 4;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
-            // btnExit
+            // btncikis
             // 
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1063, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(57, 42);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(1060, 0);
+            this.btncikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(57, 42);
+            this.btncikis.TabIndex = 24;
+            this.btncikis.UseVisualStyleBackColor = true;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // pictureBox1
             // 
@@ -394,6 +382,18 @@ namespace DoktorOtomasyonProjesi
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
+            // 
+            // btnkaydet
+            // 
+            this.btnkaydet.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnkaydet.Location = new System.Drawing.Point(6, 41);
+            this.btnkaydet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnkaydet.Name = "btnkaydet";
+            this.btnkaydet.Size = new System.Drawing.Size(217, 59);
+            this.btnkaydet.TabIndex = 24;
+            this.btnkaydet.Text = "DEĞERLERİ KAYDET";
+            this.btnkaydet.UseVisualStyleBackColor = true;
+            this.btnkaydet.Click += new System.EventHandler(this.btnkaydet_Click);
             // 
             // FrmMuayene
             // 
@@ -454,10 +454,10 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txthid;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txthyas;
+        private System.Windows.Forms.Button btncikis;
+        private System.Windows.Forms.Button btnkaydet;
     }
 }

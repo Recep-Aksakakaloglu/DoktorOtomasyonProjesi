@@ -35,9 +35,9 @@ namespace DoktorOtomasyonProjesi
             this.label3 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.txtsifre = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btncikis = new System.Windows.Forms.Button();
+            this.btngiris = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,41 +92,41 @@ namespace DoktorOtomasyonProjesi
             this.txtsifre.Size = new System.Drawing.Size(171, 37);
             this.txtsifre.TabIndex = 2;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Fuchsia;
-            this.button1.Location = new System.Drawing.Point(918, 363);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 36);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1108, -1);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(52, 48);
-            this.button2.TabIndex = 6;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btncikis);
             this.panel1.Location = new System.Drawing.Point(3, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1160, 49);
             this.panel1.TabIndex = 7;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // btncikis
+            // 
+            this.btncikis.BackColor = System.Drawing.Color.Transparent;
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(1105, -1);
+            this.btncikis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(52, 48);
+            this.btncikis.TabIndex = 4;
+            this.btncikis.UseVisualStyleBackColor = false;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
+            // 
+            // btngiris
+            // 
+            this.btngiris.BackColor = System.Drawing.Color.Fuchsia;
+            this.btngiris.Location = new System.Drawing.Point(918, 366);
+            this.btngiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btngiris.Name = "btngiris";
+            this.btngiris.Size = new System.Drawing.Size(126, 36);
+            this.btngiris.TabIndex = 3;
+            this.btngiris.Text = "Giriş Yap";
+            this.btngiris.UseVisualStyleBackColor = false;
+            this.btngiris.Click += new System.EventHandler(this.btngiris_Click);
             // 
             // FrmGiris
             // 
@@ -135,8 +135,8 @@ namespace DoktorOtomasyonProjesi
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1162, 500);
+            this.Controls.Add(this.btngiris);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtsifre);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.label3);
@@ -149,7 +149,6 @@ namespace DoktorOtomasyonProjesi
             this.Name = "FrmGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.FrmGiris_Load_1);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -162,8 +161,8 @@ namespace DoktorOtomasyonProjesi
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.TextBox txtsifre;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btncikis;
+        private System.Windows.Forms.Button btngiris;
     }
 }

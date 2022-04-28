@@ -23,7 +23,7 @@ namespace DoktorOtomasyonProjesi
 
         SqlBaglantisi bgl = new SqlBaglantisi();
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btncikis_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
@@ -48,5 +48,6 @@ namespace DoktorOtomasyonProjesi
             dataGridView1.DataSource = dt;
             bgl.baglanti().Close();
         }
+
     }
 }
