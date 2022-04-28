@@ -36,7 +36,7 @@ namespace DoktorOtomasyonProjesi
             komut3.ExecuteNonQuery();
             bgl.baglanti().Close();
 
-            SqlCommand komut4 = new SqlCommand("Select ReceteId from tbl_recete", bgl.baglanti());
+            SqlCommand komut4 = new SqlCommand("Select recete_id from tbl_recete", bgl.baglanti());
             SqlDataReader dr4 = komut4.ExecuteReader();
             while (dr4.Read())
             {
@@ -76,7 +76,7 @@ namespace DoktorOtomasyonProjesi
         private void button1_Click(object sender, EventArgs e)
         {
             ReceteId.ReceteID = _idr;
-            SqlCommand komutkaydet = new SqlCommand("insert into tbl_recete_ilac(ReceteId, Ilac_id, Ilac_ad) values (@r1,@r2,@r3)", bgl.baglanti());
+            SqlCommand komutkaydet = new SqlCommand("insert into tbl_recete_ilac(Recete_id, Ilac_id, Ilac_ad) values (@r1,@r2,@r3)", bgl.baglanti());
             komutkaydet.Parameters.AddWithValue("@r1", ReceteId.ReceteID);
             komutkaydet.Parameters.AddWithValue("@r2", _idi);
             komutkaydet.Parameters.AddWithValue("@r3", comboBox1.Text);
@@ -85,7 +85,7 @@ namespace DoktorOtomasyonProjesi
 
             listrecete.Items.Clear();
 
-            SqlCommand komut2 = new SqlCommand("Select Ilac_ad from tbl_recete_ilac where ReceteId = '" + ReceteId.ReceteID + "'", bgl.baglanti());
+            SqlCommand komut2 = new SqlCommand("Select Ilac_ad from tbl_recete_ilac where recete_id = '" + ReceteId.ReceteID + "'", bgl.baglanti());
             SqlDataReader dr2 = komut2.ExecuteReader();
             while (dr2.Read())
             {
@@ -119,15 +119,15 @@ namespace DoktorOtomasyonProjesi
 
         private void button5_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Delete from tbl_recete_ilac where ReceteId = @recete_adi AND Ilac_ad = @ilac_adi", bgl.baglanti());
-            komut.Parameters.AddWithValue("@recete_adi", _idr);
+            SqlCommand komut = new SqlCommand("Delete from tbl_recete_ilac where Recete_id = @recete_id AND Ilac_ad = @ilac_adi", bgl.baglanti());
+            komut.Parameters.AddWithValue("@recete_id", _idr);
             komut.Parameters.AddWithValue("@ilac_adi", _iaa);
             int s = komut.ExecuteNonQuery();
             bgl.baglanti().Close();
 
             listrecete.Items.Clear();
 
-            SqlCommand komut2 = new SqlCommand("Select Ilac_ad from tbl_recete_ilac where ReceteId = '" + ReceteId.ReceteID + "'", bgl.baglanti());
+            SqlCommand komut2 = new SqlCommand("Select Ilac_ad from tbl_recete_ilac where Recete_id = '" + ReceteId.ReceteID + "'", bgl.baglanti());
             SqlDataReader dr2 = komut2.ExecuteReader();
             while (dr2.Read())
             {

@@ -15,10 +15,12 @@ namespace DoktorOtomasyonProjesi
     public partial class FrmRapor : Form
     {
         public string _idh;
-        public FrmRapor(string idh)
+        public string _idm;
+        public FrmRapor(string idh, string idm)
         {
             InitializeComponent();
             _idh = idh;
+            _idm = idm;
         }
 
         SqlBaglantisi bgl = new SqlBaglantisi();
@@ -34,7 +36,6 @@ namespace DoktorOtomasyonProjesi
             month = DateTime.Now.Month;
             day = DateTime.Now.Day;
             dateTimePicker1.Value = new DateTime(year, month, day);
-            //dateTimePicker1 = DateTime.Now.ToString();
             SqlCommand komut = new SqlCommand("Select Hasta_id, Hasta_ad, Hasta_soyad, Hasta_tc from tbl_hasta where Hasta_id = '" + _idh + "'", bgl.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
@@ -56,6 +57,15 @@ namespace DoktorOtomasyonProjesi
                 txtdsoyad.Text = dr2[1].ToString();
                 txtdbrans.Text = dr2[2].ToString();
                 txtdunvan.Text = dr2[3].ToString();
+            }
+            bgl.baglanti().Close();
+
+            SqlCommand komut5 = new SqlCommand("Select Muayene_sikayet, Muayene_tani from tbl_muayene where Muayene_id = '"+_idm+"'", bgl.baglanti());
+            SqlDataReader dr5 = komut5.ExecuteReader();
+            while (dr5.Read())
+            {
+                txtsikayet.Text = dr5[0].ToString();
+                txttani.Text = dr5[1].ToString();
             }
             bgl.baglanti().Close();
 

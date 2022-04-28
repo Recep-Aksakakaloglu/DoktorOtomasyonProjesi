@@ -236,7 +236,7 @@ namespace DoktorOtomasyonProjesi
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.rcthsikayet);
-            this.groupBox2.Location = new System.Drawing.Point(395, 144);
+            this.groupBox2.Location = new System.Drawing.Point(401, 144);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -258,7 +258,7 @@ namespace DoktorOtomasyonProjesi
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.rcthtani);
-            this.groupBox3.Location = new System.Drawing.Point(395, 355);
+            this.groupBox3.Location = new System.Drawing.Point(401, 355);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -283,7 +283,7 @@ namespace DoktorOtomasyonProjesi
             this.groupBox4.Controls.Add(this.btnTahlilIste);
             this.groupBox4.Controls.Add(this.btnReceteYaz);
             this.groupBox4.Controls.Add(this.btnRaporYaz);
-            this.groupBox4.Location = new System.Drawing.Point(869, 144);
+            this.groupBox4.Location = new System.Drawing.Point(878, 144);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -355,10 +355,10 @@ namespace DoktorOtomasyonProjesi
             // 
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1037, 0);
+            this.btnExit.Location = new System.Drawing.Point(1063, 0);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(63, 39);
+            this.btnExit.Size = new System.Drawing.Size(57, 42);
             this.btnExit.TabIndex = 0;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
@@ -387,7 +387,7 @@ namespace DoktorOtomasyonProjesi
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(978, 48);
+            this.pictureBox3.Location = new System.Drawing.Point(987, 48);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(120, 96);
@@ -400,7 +400,7 @@ namespace DoktorOtomasyonProjesi
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1113, 571);
+            this.ClientSize = new System.Drawing.Size(1119, 571);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);

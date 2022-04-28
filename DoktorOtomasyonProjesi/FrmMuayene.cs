@@ -81,12 +81,13 @@ namespace DoktorOtomasyonProjesi
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
 
-            SqlCommand komut2 = new SqlCommand("Select top(1) Muayene_tani, Muayene_sikayet from tbl_muayene inner join  tbl_doktor on tbl_doktor.Doktor_id = tbl_muayene.Doktor_id where tbl_muayene.Doktor_id = ' " + _idd + " ' order by tbl_muayene.Muayene_id desc", bgl.baglanti());
+            SqlCommand komut2 = new SqlCommand("Select top(1) Muayene_tani, Muayene_sikayet, Muayene_id from tbl_muayene inner join  tbl_doktor on tbl_doktor.Doktor_id = tbl_muayene.Doktor_id where tbl_muayene.Doktor_id = ' " + _idd + " ' order by tbl_muayene.Muayene_id desc", bgl.baglanti());
             SqlDataReader dr2 = komut2.ExecuteReader();
             while (dr2.Read())
             {
                 rcthtani.Text = dr2[0].ToString();
                 rcthsikayet.Text = dr2[1].ToString();
+                _idm = dr2[2].ToString();
             }
             bgl.baglanti().Close();
 
@@ -109,7 +110,7 @@ namespace DoktorOtomasyonProjesi
 
         private void btnRaporYaz_Click(object sender, EventArgs e)
         {
-            FrmRapor fr = new FrmRapor(txthid.Text);
+            FrmRapor fr = new FrmRapor(txthid.Text, _idm);
             fr.Show();
         }
     }

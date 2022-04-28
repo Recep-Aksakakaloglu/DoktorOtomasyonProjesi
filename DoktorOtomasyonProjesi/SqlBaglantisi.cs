@@ -11,7 +11,7 @@ namespace DoktorOtomasyonProjesi
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-OS1BPQI;Initial Catalog=DbDoctor;Integrated Security=True");
+            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-OS1BPQI;Initial Catalog=DbDoktorOtomasyon;Integrated Security=True");
             baglan.Open();
             return baglan;
         }
