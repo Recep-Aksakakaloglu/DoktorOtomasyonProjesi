@@ -134,5 +134,10 @@ namespace DoktorOtomasyonProjesi
             }
             bgl.baglanti().Close();
         }
+
+        private void btncikis_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

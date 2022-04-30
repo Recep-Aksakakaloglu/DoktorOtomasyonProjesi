@@ -37,9 +37,8 @@ namespace DoktorOtomasyonProjesi
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.btncikis = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -114,12 +113,22 @@ namespace DoktorOtomasyonProjesi
             this.panel2.BackColor = System.Drawing.Color.Aquamarine;
             this.panel2.Controls.Add(this.btncikis);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Location = new System.Drawing.Point(-4, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(852, 53);
             this.panel2.TabIndex = 1;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // btncikis
+            // 
+            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
+            this.btncikis.Location = new System.Drawing.Point(791, 0);
+            this.btncikis.Name = "btncikis";
+            this.btncikis.Size = new System.Drawing.Size(61, 53);
+            this.btncikis.TabIndex = 2;
+            this.btncikis.UseVisualStyleBackColor = true;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // label1
             // 
@@ -130,17 +139,6 @@ namespace DoktorOtomasyonProjesi
             this.label1.Size = new System.Drawing.Size(351, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "Geçmiş Tahlil Bilgileri";
-            // 
-            // btncikis
-            // 
-            this.btncikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btncikis.Image = ((System.Drawing.Image)(resources.GetObject("btncikis.Image")));
-            this.btncikis.Location = new System.Drawing.Point(670, 0);
-            this.btncikis.Name = "btncikis";
-            this.btncikis.Size = new System.Drawing.Size(61, 53);
-            this.btncikis.TabIndex = 2;
-            this.btncikis.UseVisualStyleBackColor = true;
-            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // FrmGecmisTahliller
             // 
@@ -167,7 +165,6 @@ namespace DoktorOtomasyonProjesi
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;

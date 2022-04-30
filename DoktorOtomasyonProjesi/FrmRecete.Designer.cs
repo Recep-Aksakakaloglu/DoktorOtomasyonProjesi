@@ -34,6 +34,7 @@ namespace DoktorOtomasyonProjesi
             this.btnIlacEkle = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnIlacSil = new System.Windows.Forms.Button();
             this.listrecete = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -43,7 +44,6 @@ namespace DoktorOtomasyonProjesi
             this.btncikis = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnIlacSil = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,6 +98,17 @@ namespace DoktorOtomasyonProjesi
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Reçete";
+            // 
+            // btnIlacSil
+            // 
+            this.btnIlacSil.Location = new System.Drawing.Point(126, 224);
+            this.btnIlacSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnIlacSil.Name = "btnIlacSil";
+            this.btnIlacSil.Size = new System.Drawing.Size(179, 55);
+            this.btnIlacSil.TabIndex = 31;
+            this.btnIlacSil.Text = "İlacı Sil";
+            this.btnIlacSil.UseVisualStyleBackColor = true;
+            this.btnIlacSil.Click += new System.EventHandler(this.btnIlacSil_Click);
             // 
             // listrecete
             // 
@@ -173,6 +184,7 @@ namespace DoktorOtomasyonProjesi
             this.btncikis.Size = new System.Drawing.Size(58, 53);
             this.btncikis.TabIndex = 31;
             this.btncikis.UseVisualStyleBackColor = true;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // label3
             // 
@@ -191,17 +203,6 @@ namespace DoktorOtomasyonProjesi
             this.label2.Size = new System.Drawing.Size(348, 49);
             this.label2.TabIndex = 29;
             this.label2.Text = "KOCAELİ  ÜNİVERSİTESİ \r\n";
-            // 
-            // btnIlacSil
-            // 
-            this.btnIlacSil.Location = new System.Drawing.Point(126, 224);
-            this.btnIlacSil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnIlacSil.Name = "btnIlacSil";
-            this.btnIlacSil.Size = new System.Drawing.Size(179, 55);
-            this.btnIlacSil.TabIndex = 31;
-            this.btnIlacSil.Text = "İlacı Sil";
-            this.btnIlacSil.UseVisualStyleBackColor = true;
-            this.btnIlacSil.Click += new System.EventHandler(this.btnIlacSil_Click);
             // 
             // FrmRecete
             // 
