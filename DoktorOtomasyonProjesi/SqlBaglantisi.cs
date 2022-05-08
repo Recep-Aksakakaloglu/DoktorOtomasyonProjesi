@@ -7,12 +7,10 @@ using System.Data.SqlClient;
 
 namespace DoktorOtomasyonProjesi
 {
-    //VERİTABINI DİĞER FORMLARDAN ÇAĞIRABİLECEĞİMİZ BİR SINIF TANIMLADIK
     class SqlBaglantisi
     {
         public SqlConnection baglanti()
         {
-            //BURADA VERİTABINIMIZIN UZANTISINI GİRDİK VE BAĞLANTIYI AÇTIK
             SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-OS1BPQI;Initial Catalog=DoctorOtomation;Integrated Security=True");
             baglan.Open();
             return baglan;

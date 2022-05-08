@@ -50,11 +50,11 @@ namespace DoktorOtomasyonProjesi
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnTahlilIste = new System.Windows.Forms.Button();
             this.rcthdetay = new System.Windows.Forms.RichTextBox();
             this.cmbtahlil = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btncikis = new System.Windows.Forms.Button();
-            this.btnTahlilIste = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,7 +113,7 @@ namespace DoktorOtomasyonProjesi
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label9.Location = new System.Drawing.Point(126, 10);
+            this.label9.Location = new System.Drawing.Point(132, 11);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 28);
             this.label9.TabIndex = 13;
@@ -287,6 +287,17 @@ namespace DoktorOtomasyonProjesi
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tahlil Seç";
             // 
+            // btnTahlilIste
+            // 
+            this.btnTahlilIste.Location = new System.Drawing.Point(50, 277);
+            this.btnTahlilIste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTahlilIste.Name = "btnTahlilIste";
+            this.btnTahlilIste.Size = new System.Drawing.Size(161, 42);
+            this.btnTahlilIste.TabIndex = 29;
+            this.btnTahlilIste.Text = "Tahlil İste";
+            this.btnTahlilIste.UseVisualStyleBackColor = true;
+            this.btnTahlilIste.Click += new System.EventHandler(this.btnTahlilIste_Click);
+            // 
             // rcthdetay
             // 
             this.rcthdetay.Location = new System.Drawing.Point(6, 87);
@@ -327,17 +338,6 @@ namespace DoktorOtomasyonProjesi
             this.btncikis.TabIndex = 29;
             this.btncikis.UseVisualStyleBackColor = true;
             this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
-            // 
-            // btnTahlilIste
-            // 
-            this.btnTahlilIste.Location = new System.Drawing.Point(50, 277);
-            this.btnTahlilIste.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTahlilIste.Name = "btnTahlilIste";
-            this.btnTahlilIste.Size = new System.Drawing.Size(161, 42);
-            this.btnTahlilIste.TabIndex = 29;
-            this.btnTahlilIste.Text = "Tahlil İste";
-            this.btnTahlilIste.UseVisualStyleBackColor = true;
-            this.btnTahlilIste.Click += new System.EventHandler(this.btnTahlilIste_Click);
             // 
             // FrmTahlil
             // 
